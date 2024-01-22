@@ -1,0 +1,113 @@
+
+.main-register{
+    font-size: 16px;
+    padding: 50px 0px;
+    background-color: #ebebeb;
+}
+.form-container{
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-control{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.form-control label{
+    width: 100%;
+    margin: 12px 0px;
+    font-weight: 600;
+}
+.form-control input{
+    width: 100%;
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid rgb(196, 196, 196);
+    outline: none;
+}
+
+.profile-choise-container, .selected-interest{
+    margin: 12px 0px;
+    width: 100%;
+}
+.profile-choise-container p, .selected-interest p{
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.selected-choice{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-weight: 500;
+    font-size: 0.9342rem;
+}
+
+.interest-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 20px;
+}
+.interest-container input{
+    margin-right: 12px;
+}
+
+.container-button{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 15px;
+    margin: 12px 0px;
+}
+
+.register-button, .reset-button{
+    border: none;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+}
+
+.register-button{
+    background-color: #1259c3;
+    transition: all 0.3s ease-out;
+}
+.register-button:hover{
+    background-color: #0022AA;
+}
+
+.reset-button{
+    background-color: gray;
+    color: black;
+}
+
+@media (min-width: 768px){
+    .form-container{
+        width: 60%;
+    }
+    .selected-choice{
+        justify-content: center;
+        gap: 40px;
+    }
+}
+@media (min-width:1200px) {
+    .form-container{
+        width: 40%;
+    }
+    .container-button{
+        justify-content: center;
+    }
+    .register-button, .reset-button{
+        width: 48%;
+    }
+    .form-control input{
+        padding: 10px 10px;
+    }    
+}
